@@ -1,0 +1,69 @@
+#land {
+padding-top:80px; 
+padding-bottom: 50%;	
+text-align: center;
+}
+#features {padding: 0 0 60px;
+ }
+
+.img{
+	
+	background-image:url(../img/pic3.jpg);
+}
+
+.back{
+	background-color: #EDCCAE;
+}
+
+
+
+
+.container1 {
+	
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; 
+  
+  
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+color{
+	font-size: 200%;
+	color: #FFFFFF;
+	text-align: center; 
+}
+.col-sm-12{
+	margin-bottom: 30px;
+	padding-bottom: 3em;
+	padding-top: 3em;
+	padding-left: 30;
+	padding-right: 30;
+	border: 1.5em;
+}
+
+.centertext{
+	
+	text-align: left;
+	margin-bottom:30px; /*а было 50px изменили чтобы отлепить обо мне от семейных дел*/
+	  margin-top:30px;
+	 margin-left:5%;  /*5% тк если больше, то текст в блоке услуги вылезает справа за границы белого блока*/
+	 margin-right:5%;
+	padding-bottom: 4em;
+	padding-top: 3em;       /*рамка и размещение окна со вступительным текстом (и окна с расценками тоже)*/
+	 padding-left: 3em;
+	 padding-right: 3em;
+	border: 1.5em;
+}
+.color2{
+	text-align:left;
+	color: #000000;
+	line-height: 25px;
+}
