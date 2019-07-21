@@ -19,10 +19,10 @@ try {
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;
 
-    // Настройки вашей почты
+    
     $mail->Host = 'ssl://smtp.mail.ru'; // SMTP сервера
-    $mail->Username = 'bebeshkomail@mail.ru'; // Логин на почте
-    $mail->Password = 'M_Y5ra1vE_I63M8Y_RA9_02_vIXA'; // Пароль на почте
+    $mail->Username = 'bebeshkomail'; // Логин на почте
+    $mail->Password = 'hakatonhakaton'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
     $mail->setFrom('bebeshkomail@mail.ru', 'Алена'); // Адрес самой почты
@@ -43,18 +43,18 @@ if (!empty($_FILES['myfile']['name'][0])) {
     }   
 }
 
-        // -----------------------
-        // Само письмо
-        // -----------------------
-        $mail->isHTML(true);
-    
-        $mail->Subject = 'Заголовок письма';
-        $mail->Body    = "<b>Имя:</b> $name <br>
-        <b>Почта:</b> $email<br><br>
-        <b>Сообщение:</b><br>$text";
+        
+				// письмо
+			   
+				$mail->isHTML(true);
+			
+				$mail->Subject = 'Заголовок письма';
+				$mail->Body    = "<b>Имя:</b> $name <br>
+				<b>Почта:</b> $email<br><br>
+				<b>Сообщение:</b><br>$text";
 
 
-// Проверяем отравленность сообщения
+// отравленность сообщения
 if ($mail->send()) {
     echo "$msg";
 } else {
