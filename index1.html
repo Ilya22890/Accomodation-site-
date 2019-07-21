@@ -6,154 +6,19 @@
 		
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main1.css">
-		<link rel="stylesheet" href="css/add.css">
+		<link rel="stylesheet" href="css/forform.css">
     </head>
 	
 	
 	
 	
 <body>
-
-<section id="land" class="parallax dark_section text-center">
-  <div class="container1">
-    
-      
-    <div class="row">
-      <div class="col-sm-12-2">
-	  
-	  <div class = "back">
-
- <!--<div class="row">
-      <div class="col-sm-6">
-        <div class="contact-form">
-          <form class="contact-form" method="post" action="/">
-            <p class="contact-form-name">
-              <label for="name">Name <span class="required">*</span></label>
-              <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Your Name">
-            </p>
-            <p class="contact-form-email">
-              <label for="email">Email <span class="required">*</span></label>
-              <input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Your email">
-            </p>
-            <p class="contact-form-subject">
-              <label for="subject">Website</label>
-              <input type="text" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Your Subject">
-            </p>
-            <p class="contact-form-message">
-              <label for="message">Comment</label>
-              <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder=""></textarea>
-            </p>
-            <p class="contact-form-submit text-center"> <!--<input type="submit" /> - создает кнопку отправки данных формы программе-обработчику.-->
-            <!--<input type="submit" value="Send Your Message" id="contact_form_submit" name="contact_submit" class="theme_btn">
-            </p>
-          </form>
-        </div>
-      </div>
-	  </div>-->
-	  
-	  
-	  <!--2 вар сер прил-->
-	  
-
-	<!--<div class="container">
-		<h2>Сообщите о проблеме</h2>
-		<form id="contactForm" action="handler.php" method="post">
-			<div class="field-block">
-				<label for="name">Ваше имя:</label>
-				<input id="name" class="field" name="name" required type="text" placeholder="Иванов Иван Иванович">
-			</div>
-			<div class="field-block">
-				<label for="email">Ваш E-mail:</label>
-				<input id="email" class="field" name="email" required type="email" placeholder="ivanov@email.com">
-			</div>
-			<div class="field-block">
-				<label for="phone">Ваш телефон:</label>
-				<input id="phone" class="field" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
-			</div>
-			<div class="field-block">
-				<label for="message">Текст сообщения:</label>
-				<textarea id="message" class="field" required name="message" rows="4"></textarea>
-			</div>
-			<div class="field-block">
-				<input id="check" name="check" checked type="checkbox">
-				<span class="check-text">Я добровольно отправляю свои данные</span>
-			</div>
-			<button id="button" class="button" type="submit">Отправить</button>
-			<div class="result">
-				<span id="answer"></span>
-				<span id="loader"><img src="images/loader.gif" alt=""></span>
-			</div>
-		</form>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/main.js"></script>-->
-	<script src=”https://code.jquery.com/jquery-3.4.0.min.js"></script>  
+<div class = "back">
+<!--картинка-->
+<section id="land" class="parallax dark_section text-center img2">
+  
 
 
-
-<!--3 вар-->
-
-<form enctype="multipart/form-data" method="post" id="form">
- <p>Имя</p>
- <input placeholder="Представьтесь" name="name" type="text" >
- <p>Email</p>
- <input placeholder="Укажите почту" name="email" type="text" >
- <p>Сообщение</p>
- <textarea name="text"></textarea>
- <p>Прикрепить файлы</p>
- <input type="file" name="myfile[]" multiple id="myfile">
- <p><input value="Отправить" type="submit"></p>
-</form>
-	
-	  <script>
-// Отправка данных на сервер
-$('#form').trigger('reset');
-$(function() {
-  'use strict';
-  $('#form').on('submit', function(e) {
-    e.preventDefault();
-    $.ajax({
-      url: 'send.php',
-      type: 'POST',
-      contentType: false,
-      processData: false,
-      data: new FormData(this),
-      success: function(msg) {
-        console.log(msg);
-        if (msg == 'ok') {
-          alert('Сообщение отправлено');
-          $('#form').trigger('reset'); // очистка формы
-        } else {
-          alert('Ошибка');
-        }
-      }
-    });
-  });
-});
-</script>
-	  
-	  
-	  
-	  
-	 
-	  
-	  
-	  
-	  
-	  
-	  
-	  </div>
-
-	  
-	  
-	  
-	  
-   </div> 
-   </div>  
-   </div>   
-   
- 
 </section>
 
 
@@ -173,6 +38,67 @@ $(function() {
 
 
 
+<!--форма-->
+
+<section id="land2" class="parallax dark_section text-center">
+  <div class="container1">
+    
+      
+    <div class="row">
+      <div class="col-sm-12">
+	    
+	  
+
+ 
+	<script src=”https://code.jquery.com/jquery-3.4.0.min.js"></script>  
+
+
+
+<!--3 вар-->
+
+		<form enctype="multipart/form-data" method="post" id="form">
+		 <div class="flexblock">
+		   <div class="group">
+			 <div class="input-wrap ">
+			   <input name="name" id="name" type="text" class="form-input">
+			   <label for="name" class="form-label">Введите ваше имя</label>
+			 </div>
+			 <div class="input-wrap ">
+			   <input name="email" id="email" type="mail" class="form-input">
+			   <label for="email" class="form-label">Введите ваш Email</label>
+			 </div>
+		   </div>
+		   <div class="area-wrap right">
+			 <textarea name="text" class="form-text" id="text"></textarea>
+			 <label for="text" class="area-label">Оставьте ваше сообщение</label>
+		   </div>
+		   <label for="myfile" class="file-label left">
+			<img src="img/upload.svg" alt="">
+			<p class="amount">Прикрепить файлы</p>
+		   </label>
+		   <input type="file" class="my" id="myfile" name="myfile[]" multiple>
+
+		   <button type="submit" class="button right">Отправить</button>
+		   </div>
+
+		   <div class="loading">
+			<p>Подождите</p>
+		   </div>
+		</form>
+
+        <div class="msg"></div>
+
+
+
+</div>
+  
+   </div> 
+   </div>  
+</section>
+
+ 
+
+
 
 
 
@@ -183,4 +109,57 @@ $(function() {
 
 
 </div>
+
+
+
+
+
+
+
+
+
 </body>
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/js.js"></script>
+<link rel="stylesheet" href="css/css.css" />
+	  
+	 
+	  
+	  
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
